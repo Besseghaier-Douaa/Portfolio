@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #E8D6CB;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    }
+header{
+    height: 100vh;
+    position: relative;
+    background-image: url('pics/linestar.png');
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    
+}
+
+.start{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #5D2E46;
+    font-family: "Lobster", sans-serif;
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+
+}
+h1{
+    color: #5D2E46;
+    font-family: "Lobster", sans-serif;
+    text-align: center;
+    font-size: 50px;
+    }
+section{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    align-items: flex-start;
+    
+   
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: flex-start;
+    
+}
+.intro{
+    background-color:#D0ADA7;
+    align-items: center;
+    padding: 10px;
+    color: #5D2E46;
+    margin-top: 30px;
+}
+.ideas{
+    background-color:#D0ADA7;
+    align-items: center;
+    padding: 10px;
+    color: #5D2E46;
+}
+.about{
+    background-color:#D0ADA7;
+    align-items: center;
+    margin-top: 70px;
+    padding:10px;
+    color: #5D2E46;
+}
+footer{
+    background-color:#D0ADA7;
+    color: #5D2E46;
+    position:static;
+    margin-top: 3rem;
+    gap: 2rem;
+    bottom: 0;
+    padding: 10px;
+    width: 98%;
+    display: flex;
+    
+    
+}
