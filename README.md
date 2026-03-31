@@ -5,3 +5,20 @@ i moved back and created the front page, and added the pictures and got my intre
 --------------
 ok, i made a full design in canva so i don't just keep changing everytime i work on it. i tried to keep it simple, with calm color pallet. now im coding it slowly. The page doesn't align perfectly when i make the window smaller and it break. im trying to fix that. also will try to add @media for a phone version. obviously i have mistakes here and there so im using claude to fix them, tho im trying to figure things out myself cuz its a way to refresh what i learned and add to it.
 -------------
+I noticed that when i split my screen to code and see it live things get messed up, so when i looked into how to fix that i found out that i should use % or rem instead of px, tho im used to px im trying to not use them as much anymore. I think media shpuld fix that later on, but im still looking into it.
+
+- ok after searching: basiclly make evrything the way i want, the layout i mean, and then just use the @media to fix the problem, to find them you can open the site in a split screen or in the phone. for the phone you use lan code network that you find in cmd ipconfig  wireless LAN adapter WIFI. and to that ----:5500/index.html.
+ofc there is milions of diffrent screen size but the most common and that can work on most screens is:
+@media (max-width: 1400px) { }  /* large laptop */
+@media (max-width: 1200px) { }  /* small laptop */
+@media (max-width: 1024px) { }  /* tablet landscape */
+@media (max-width: 768px)  { }  /* tablet portrait */
+@media (max-width: 480px)  { }  /* phone */
+
+NOTE: if there is an akward empty space you dont want, put a border on all the elements
+using:
+* {
+    outline: 1px solid red;
+}
+
+NOTE: suffering trying to make the layout perfect in most sizes when the site is not even half complete
