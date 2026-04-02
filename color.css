@@ -3,6 +3,12 @@
 }
 body {
     background-image: url('pics/Portfolio.png');
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+    margin: 0%;
+    width: 100%;
+    padding: 0%;
 }
 .menu {
     background-color: #d0ada7;
@@ -14,7 +20,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: bolder;
     font-size: 1.25rem;
-    border-radius: 10px;
+    width: 100%;
 }
 header {
     display: flex;
@@ -72,7 +78,7 @@ hr {
 .arrow {
     width: 70px;
     margin-left: 68%;
-    justify-self: center;
+    align-items: center;
 }
 .separate {
     border: none;
@@ -100,6 +106,12 @@ hr {
     font-size: 1.875rem;
     padding-left: 10%;
 }
+.info {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding-left: 10%;
+}
 .intro {
     width: 65%;
     padding: 0 1%;
@@ -112,12 +124,7 @@ hr {
 .bold {
     font-weight: 600;
 }
-.info {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-    padding-left: 10%;
-}
+
 .info img {
     width: 18.75rem;
     max-width: 18.75rem;
@@ -193,6 +200,155 @@ span img{
     width: 50px;
 }
 
+.lan{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50%;
+    margin-top: -3%;
+}
+.lang{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: #ac6a6c;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.l1{
+    color:#ac6a6c;
+    -webkit-text-stroke: 1px #5e2e46 ;
+    background-color: transparent;
+    text-decoration: 3px ;
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+}
+.lang-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+}
+h2{
+    font-family: "Oswald", sans-serif;
+    font-weight: 900;
+    color: #5e2e46;
+    font-size: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.Python{
+    display: flex;
+    flex-direction: column;
+    margin-top: -60px;
+}
+
+.date{
+    color: #5e2e46;
+    font-size: 24px;
+    font-weight: 200;
+    margin-top: -20px;
+}
+.loading{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; 
+}
+.nactive{
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    background-color:#d0ada7 ;
+}
+.active{
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #ac6a6c;
+}
+.year{
+    color: #ac6a6c;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: "Chiron GoRound TC", sans-serif;
+    font-weight: 800;
+
+}
+.T1{
+    color: #5e2e46;
+    text-decoration: underline ;
+    font-family:"Chiron GoRound TC", sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    padding-left:13% ;
+    display: flex;
+    padding-top: 60px; 
+}
+.TT1{
+    display: flex;
+    gap: 2rem;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.Trow{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+
+}
+.MT1{
+    display: flex; 
+    max-width:500px;
+    border: 2px solid #5D2E46;
+    
+}
+.logos{
+    display: flex;
+    gap: 4.125rem;
+    padding-left: 15%;
+    margin-top: -6rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.logos img{
+    width:  80px;
+    
+}
+.LO3{
+    width: 200px;
+}
+.T2{
+    color: #5e2e46;
+    text-decoration: underline ;
+    font-family:"Chiron GoRound TC", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    white-space: nowrap;
+    padding-bottom: 10%;
+}
+footer{
+    background-color: #d0ada7;
+    position:relative;
+    bottom: 0;
+    padding-top: 1%;
+    gap: 3.5rem;
+    bottom: 0;
+    color: #5e2e46;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 1.25rem;
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    
+}
 /*sizes*/
 @media (max-width: 1200px) {
     .tag {
@@ -200,35 +356,95 @@ span img{
         padding-left: 10%;
         gap: 2rem;
     }
-    .itag span img{
+    .itag span img {
         padding-left: 10%;
     }
-    .itag span{
+    .itag span {
         padding-bottom: 0%;
     }
+    .TT1 {
+        flex-direction: column;
+        padding-right: 5%;
+    }
+    .T1 {
+        align-items: center;
+        margin-left: -100px;
+    }
+    .Trow {
+        margin-left: -100px;
+        align-items: center;
+    }
+    .MT1 {
+        width: 18.75rem;
+        align-items: center;
+        margin-left: 250px;
+        display: flex;
+        justify-content: center;
+    }
+    .logos {
+        margin-top: 3%;
+        display: flex;
+        align-items: center;
+        margin-left: 120px;
+    }
 }
+
 @media (max-width: 1024px) {
-    .intro{
+    .intro {
+        text-align: center;
         flex-direction: column;
     }
-    .info img{
+    .info img {
         margin-top: -5rem;
         width: 18.75rem;
     }
-     .tag {
-        padding-left: 20%;
-        padding-top:13%;
+    .tag {
+        padding-left: 18%;
+        padding-top: 19%;
     }
-    .itag{
-        padding: 1%;
-     }
-     .itag span{
-    padding: 2px;
-    padding-left: 6px;
-}
+    .itag {
+        gap: 2rem;
+    }
+    .itag span {
+        padding: 0%;
+    }
+    .TT1 {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .Trow {
+        align-items: center;
+        margin-left: 0;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .T1 {
+        padding-left: 0;
+        margin-left: 0;
+        justify-content: center;
+    }
+    .MT1 {
+        margin-left: 0;
+        width: 80%;
+        max-width: 500px;
+    }
+    .logos {
+        justify-content: center;
+        padding-left: 0;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .d {
+        font-size: 2rem;
+        top: -6.5rem;
+        right: -6rem;
+    }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
     .info {
         flex-shrink: 1;
         gap: 0;
@@ -239,17 +455,110 @@ span img{
         padding: 0;
     }
     .info img {
-    width: 18.75rem;
-    max-width: 18.75rem;
-    margin-top: -6rem;
-}
+        width: 18.75rem;
+        max-width: 18.75rem;
+        margin-top: -6rem;
+    }
     .tag {
         padding-left: 10%;
         padding-top: 20%;
-       
     }
-    .itag span{
+    .itag {
+        gap: 2rem;
+    }
+    .itag span {
         padding: 0%;
-    
+    }
+    .MT1 {
+        width: 90%;
+    }
 }
+
+@media (max-width: 480px) {
+    .d {
+        font-size: 25px;
+        top: -3.875rem;
+        right: -5.375rem;
+    }
+    p {
+        padding-left: 2%;
+        margin-top: -60px;
+        white-space: nowrap;
+    }
+    hr {
+        width: 40%;
+        margin-left: 5.25rem;
+    }
+    .circle img {
+        border-radius: 50%;
+        margin-top: 3rem;
+    }
+    .scroll {
+        align-items: center;
+        padding-top: 6.25rem;
+        font-size: 1.25rem;
+    }
+    .arrow {
+        width: 70px;
+        margin-left: 74%;
+    }
+    .T1 {
+        padding-right: 0%;
+        padding-left: 0%;
+        justify-content: center;
+    }
+    .TT1 {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .Trow {
+        margin-top: -15px;
+        gap: 20px;
+        padding-right: 0;
+        align-items: center;
+    }
+    .MT1 {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .tag {
+        align-items: center;
+        margin-left: 6%;
+        font-size: 16px;
+    }
+    .itag span {
+        padding-left: 3%;
+    }
+    .Python {
+        margin-top: -30px;
+    }
+    .loading {
+        padding-left: 10%;
+    }
+    .logos {
+        margin-top: 1rem;
+        padding-left: 3%;
+        gap: 1.5rem;
+    }
+    .lan {
+        padding-left: 40%;
+    }
+    .itag {
+        gap: 0.8rem;
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 2.5rem;
+        padding-top: 20%;
+    }
+    .info img {
+        width: 100%;
+        margin-left: 0;
+        margin-top: -5rem;
+    }
+    .intro {
+        width: 100%;
+    }
 }

@@ -21,4 +21,9 @@ using:
     outline: 1px solid red;
 }
 
-NOTE: suffering trying to make the layout perfect in most sizes when the site is not even half complete
+PS: suffering trying to make the layout perfect in most sizes when the site is not even half complete
+------------
+OMG making ebything lined was a sufferrr. i forgot to add the phone size but i was able to fix it (yay)
+but its done, and i think to have evything exactly centered you need the lef and right padding 0 and you put align item:middle.
+Not sure tho, but FINNALY ITS DONE
+(i still need to do the animation in java, probably will reget it but gotta lean)
