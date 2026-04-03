@@ -21,13 +21,13 @@ year.forEach(year => {
     year.style.opacity='0'
     year.style.trasition='opacity 0.5s ease'
 });
-const observer=new IntersectionObserver((entries)=>){
+const observer=new IntersectionObserver((entries)=>{
     entries.forEach(entry => {
         if (entry.isIntersecting){
             const section =entry.target
             const activeBars=section.querySelectorAll('.active')
             const year=section.querySelector('.year')
-            activeBard..forEach((bar,i)=> {
+            activeBars.forEach((bar,i)=> {
                 setTimeout(() => {
                    bar.style.backgroundColor='#ac6a6c' 
                 }, i*300);
@@ -35,12 +35,12 @@ const observer=new IntersectionObserver((entries)=>){
             setTimeout(() => {
                 year.style.opacity='1'
             },activeBars.length*300+200);
-            oberver.unobserve(section)
+            observer.unobserve(section)
         }
         
     });
-},{threshold:0.3}
-loadings.forEach(loading => {
+},{threshold:0.3});
+loading.forEach(loading => {
     observer.observe(loading)
 })
 </script>
