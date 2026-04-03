@@ -29,3 +29,6 @@ Not sure tho, but FINNALY ITS DONE
 (i still need to do the animation in java, probably will reget it but gotta lean)
 ---------
 Trying to do my js animation, man that stuff is CONFUSING, Trying to recall old stuff from school and learning the newer version of them. WHY WOULD THEY TEACH US THE OLD STUFF AND IGNORE THE NEWER ONES. ahem, it did not work at first but if i recall right its saving problem, ill try to put it in a seperate file instead of using <script></script>. But ill do that later
+-------
+alr the save was not the problem, and i added some animations, not the fade one cuz i hate it and im a person who scroll fast so waiting for the words to appear annoy me.
+this was fun, time it took like a week and a half or two? so its a good activity for the holiday. today is 4/3/26 (shouldv'e added when it started bruh)
