@@ -10,6 +10,40 @@
 <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<script>
+const loading=document.querySelectAll('.loading')
+const actives=document.querySelectAll('.active')
+const year=document.querySelectAll('.lyear')
+actives.forEach(bar => {
+    bar.style.backgroundColor='#d0ada7'
+});
+year.forEach(year => {
+    year.style.opacity='0'
+    year.style.trasition='opacity 0.5s ease'
+});
+const observer=new IntersectionObserver((entries)=>){
+    entries.forEach(entry => {
+        if (entry.isIntersecting){
+            const section =entry.target
+            const activeBars=section.querySelectorAll('.active')
+            const year=section.querySelector('.year')
+            activeBard..forEach((bar,i)=> {
+                setTimeout(() => {
+                   bar.style.backgroundColor='#ac6a6c' 
+                }, i*300);
+            });
+            setTimeout(() => {
+                year.style.opacity='1'
+            },activeBars.length*300+200);
+            oberver.unobserve(section)
+        }
+        
+    });
+},{threshold:0.3}
+loadings.forEach(loading => {
+    observer.observe(loading)
+})
+</script>
 <body>
     <nav class="menu"><span>About</span> <span> Languages</span><span>Skills</span> <span>Projects</span></nav>
 <header>
