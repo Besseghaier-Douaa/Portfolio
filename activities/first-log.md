@@ -1,0 +1,1 @@
+I'm going to be adding the activities that I do in my club and events that I join. I'm in the tunirobot club in islaib. and I might join another later. I'm working in the design department.
