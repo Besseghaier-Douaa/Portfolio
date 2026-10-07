@@ -3,7 +3,7 @@ A personal portfolio side that introduces who i am, my projects and my skils.
 This was created as both a practice in front-end development and to put my projects in one place.
 
 *Live Demo:* https://besseghaier-douaa.github.io/Portfolio/
-*Status:* started around march 26, 2026 and finished around april 2 2026. More edits were added later on
+*Status:* started around march 26, 2026 and finished around april 12 2026. More edits were added later on
 
 **#Features**
 -Started by planning my intro, about and the sections
